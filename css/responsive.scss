@@ -1,0 +1,107 @@
+@media only screen and (min-width: 680px) {
+    body {
+        margin: 1.5em 5em;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        nav {
+            transform: translateX(0);
+            position: unset;
+            display: block;
+            width: auto;
+            height: auto;
+            background: none;
+
+            ul {
+                display: flex;
+                margin: 0;
+
+                li {
+                    a {
+                        color: #fff;
+                        font-size: 0.9rem;
+                        padding: 0.75em 1.5em;
+
+                        &:hover {
+                            background: none;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .close {
+                display: none;
+            }
+        }
+    }
+
+    .img-hero {
+        left: unset;
+        right: 0;
+        width: 50%;
+        height: 40em;
+    }
+
+    .logo {
+        color: red;
+    }
+
+    section.hero {
+        max-width: 40%;
+        color: #000;
+        height: auto;
+        margin-bottom: 8em;
+
+        .down-arrow {
+            position: unset;
+            stroke: #000;
+
+            path {
+                fill: #000;
+            }
+        }
+    }
+
+    .feature {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 8em;
+        gap: 3em;
+
+        .content {
+            width: 25em;
+            text-align: right;
+        }
+
+        img {
+            width: 25em;
+        }
+    }
+
+    .feature.reverse {
+        flex-direction: row-reverse;
+
+        .content {
+            text-align: left;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .feature {
+        gap: 0;
+    }
+}
